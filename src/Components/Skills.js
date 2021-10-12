@@ -36,7 +36,7 @@ const Skills = () => {
 	return (
 		<div className="sm:flex">
 			{skillList.map(skills => (
-				<div class=" flex-grow rounded-md border-2 border-gray-200 p-3 m-4 ">
+				<div class="bg-gray-100 flex-grow rounded-md p-3 m-4 ">
 					<div className="text-center text-4xl m-3">{skills.icon}</div>
 
 					<h3 class="text-center text-xl">{skills.title}</h3>
