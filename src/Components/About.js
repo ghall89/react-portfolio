@@ -9,7 +9,7 @@ const About = () => {
 					src="https://res.cloudinary.com/dfkh0m4wf/image/upload/v1629823161/ghall.dev/portrait_y8yaqq.jpg"
 				/>
 			</div>
-			<div class="text-white text-lg text-center w-3/4 mx-auto">
+			<div class="text-white text-lg text-center md:w-3/4 mx-auto">
 				<p class="m-4">
 					Hey there! I'm Graham, and I'm a front-end web developer from Rhode
 					Island.
