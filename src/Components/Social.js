@@ -26,7 +26,7 @@ const Button = () => {
 	];
 
 	return (
-		<div className="flex text-center max-w-5xl mx-auto flex-wrap space-y-3 md:space-x-3 md:space-y-0">
+		<div className="flex text-center max-w-5xl mx-auto my-10 flex-wrap space-y-3 md:space-x-3 md:space-y-0">
 			{links.map(link => (
 				<a
 					key={link.id}
