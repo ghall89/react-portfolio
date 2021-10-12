@@ -6,16 +6,19 @@ const Button = () => {
 	// data for links
 	const links = [
 		{
+			id: 1,
 			name: 'Resumé',
 			url: './docs/graham_hall_resume.pdf',
 			icon: <FontAwesomeIcon icon={faFilePdf} />
 		},
 		{
+			id: 2,
 			name: 'LinkedIn',
 			url: 'https://www.linkedin.com/in/ghalldev/',
 			icon: <FontAwesomeIcon icon={faLinkedin} />
 		},
 		{
+			id: 3,
 			name: 'GitHub',
 			url: 'https://github.com/ghall89',
 			icon: <FontAwesomeIcon icon={faGithub} />
@@ -26,8 +29,10 @@ const Button = () => {
 		<div className="flex text-center max-w-5xl mx-auto flex-wrap space-y-3 md:space-x-3 md:space-y-0">
 			{links.map(link => (
 				<a
+					key={link.id}
 					href={link.url}
 					target="_blank"
+					rel="noreferrer"
 					className="text-white border-2 border-white p-2 rounded-md flex-grow transition-colors hover:text-blue-500 hover:bg-white min-w-full md:min-w-0"
 				>
 					{link.icon}

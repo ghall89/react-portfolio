@@ -6,7 +6,7 @@ const Header = () => {
 			<img
 				className="sm:w-4/6 sm:max-w-3xl m-auto"
 				src={logo}
-				alt="Graham Hall"
+				alt="Graham Hall's logo"
 			/>
 			<h2 className="text-center text-2xl text-gray-600 py-7">
 				Front-End Web Developer

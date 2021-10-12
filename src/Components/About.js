@@ -7,6 +7,7 @@ const About = () => {
 				<img
 					className="rounded-full w-52 mx-auto transform -translate-y-32"
 					src="https://res.cloudinary.com/dfkh0m4wf/image/upload/v1629823161/ghall.dev/portrait_y8yaqq.jpg"
+					alt="Graham"
 				/>
 			</div>
 			<div className="text-white text-lg text-center md:w-3/4 mx-auto">

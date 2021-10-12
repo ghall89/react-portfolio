@@ -5,12 +5,14 @@ const Skills = () => {
 	//data for skills
 	const skillList = [
 		{
+			id: 'tools',
 			title: 'Tools',
 			icon: <FontAwesomeIcon icon={faTools} />,
 			list1: ['Figma', 'Sketch', 'Git/GitHub', 'Heroku', 'NPM', 'ZSH', 'iTerm'],
 			list2: ['MacOS', 'Linux', 'VSCode', 'BBEdit', 'Nova']
 		},
 		{
+			id: 'tech',
 			title: 'Technologies',
 			icon: <FontAwesomeIcon icon={faCode} />,
 			list1: [
@@ -36,7 +38,7 @@ const Skills = () => {
 	return (
 		<div className="sm:flex max-w-5xl	mx-auto">
 			{skillList.map(skills => (
-				<div className="flex-grow p-3 m-4 ">
+				<div className="flex-grow p-3 m-4" key={skills.id}>
 					<div className="text-center text-4xl m-3">{skills.icon}</div>
 
 					<h3 className="text-center text-xl">{skills.title}</h3>
@@ -44,12 +46,16 @@ const Skills = () => {
 					<div className="flex m-2 mx-auto w-full sm:w-1/2">
 						<ul className="flex-grow text-right">
 							{skills.list1.map(listItem => (
-								<li className="m-2">{listItem}</li>
+								<li key={Math.random()} className="m-2">
+									{listItem}
+								</li>
 							))}
 						</ul>
 						<ul className="flex-grow">
 							{skills.list2.map(listItem => (
-								<li className="m-2">{listItem}</li>
+								<li key={Math.random()} className="m-2">
+									{listItem}
+								</li>
 							))}
 						</ul>
 					</div>
