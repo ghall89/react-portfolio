@@ -8,7 +8,7 @@ const Skills = () => {
 			title: 'Tools',
 			icon: <FontAwesomeIcon icon={faTools} />,
 			list1: ['Figma', 'Sketch', 'Git/GitHub', 'Heroku', 'NPM', 'ZSH', 'iTerm'],
-			list2: ['MacOS', 'Linux', 'Visual Studio Code', 'BBEdit', 'Nova']
+			list2: ['MacOS', 'Linux', 'VSCode', 'BBEdit', 'Nova']
 		},
 		{
 			title: 'Technologies',
@@ -34,22 +34,22 @@ const Skills = () => {
 	];
 
 	return (
-		<div className="sm:flex">
+		<div className="sm:flex max-w-5xl	mx-auto">
 			{skillList.map(skills => (
-				<div class="bg-gray-100 flex-grow rounded-md p-3 m-4 ">
+				<div className="flex-grow p-3 m-4 ">
 					<div className="text-center text-4xl m-3">{skills.icon}</div>
 
-					<h3 class="text-center text-xl">{skills.title}</h3>
+					<h3 className="text-center text-xl">{skills.title}</h3>
 
-					<div className="flex m-2">
-						<ul class="flex-grow">
+					<div className="flex m-2 mx-auto w-full sm:w-1/2">
+						<ul className="flex-grow text-right">
 							{skills.list1.map(listItem => (
-								<li class="m-2">- {listItem}</li>
+								<li className="m-2">{listItem}</li>
 							))}
 						</ul>
-						<ul class="flex-grow">
+						<ul className="flex-grow">
 							{skills.list2.map(listItem => (
-								<li class="m-2">- {listItem}</li>
+								<li className="m-2">{listItem}</li>
 							))}
 						</ul>
 					</div>

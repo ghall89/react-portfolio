@@ -13,7 +13,7 @@ const Footer = () => {
 	};
 
 	return (
-		<footer class="text-center text-white p-8 bg-gradient-to-br from-blue-500 to-purple-400 ">
+		<footer className="text-center text-white p-8 bg-gradient-to-br from-blue-500 to-purple-400 ">
 			<p>
 				<span>
 					Made with <FontAwesomeIcon icon={faCoffee} /> in Rhode Island.

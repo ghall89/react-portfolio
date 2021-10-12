@@ -23,12 +23,12 @@ const Button = () => {
 	];
 
 	return (
-		<div class="flex text-center max-w-5xl mx-auto flex-wrap space-y-3 md:space-x-3 md:space-y-0">
+		<div className="flex text-center max-w-5xl mx-auto flex-wrap space-y-3 md:space-x-3 md:space-y-0">
 			{links.map(link => (
 				<a
 					href={link.url}
 					target="_blank"
-					class="text-white border-2 border-white p-2 rounded-md flex-grow transition-colors hover:text-blue-500 hover:bg-white min-w-full md:min-w-0"
+					className="text-white border-2 border-white p-2 rounded-md flex-grow transition-colors hover:text-blue-500 hover:bg-white min-w-full md:min-w-0"
 				>
 					{link.icon}
 					<span className="ml-3">{link.name}</span>
