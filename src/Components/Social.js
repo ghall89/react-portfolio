@@ -6,7 +6,7 @@ const Button = () => {
 	const links = [
 		{
 			name: 'Resumé',
-			url: '#',
+			url: './docs/graham_hall_resume.pdf',
 			icon: <FontAwesomeIcon icon={faFilePdf} />
 		},
 		{
@@ -27,7 +27,7 @@ const Button = () => {
 				<a
 					href={link.url}
 					target="_blank"
-					class="bg-white p-2 m-4 rounded-md shadow-md flex-grow"
+					class="text-white border-2 border-white p-2 m-4 rounded-md flex-grow transition-colors hover:text-blue-500 hover:bg-white"
 				>
 					{link.icon}
 					<span className="ml-3">{link.name}</span>
