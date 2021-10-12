@@ -2,11 +2,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTools, faCode } from '@fortawesome/free-solid-svg-icons';
 
 const Skills = () => {
+	//data for skills
 	const skillList = [
 		{
 			title: 'Tools',
 			icon: <FontAwesomeIcon icon={faTools} />,
-			list1: ['Figma', 'Sketch', 'Git/GitHub', 'Heroku', 'NPM', 'ZSH'],
+			list1: ['Figma', 'Sketch', 'Git/GitHub', 'Heroku', 'NPM', 'ZSH', 'iTerm'],
 			list2: ['MacOS', 'Linux', 'Visual Studio Code', 'BBEdit', 'Nova']
 		},
 		{

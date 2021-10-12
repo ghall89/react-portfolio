@@ -3,6 +3,7 @@ import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Button = () => {
+	// data for links
 	const links = [
 		{
 			name: 'Resumé',

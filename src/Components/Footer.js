@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
+	// display copyright year based on current year
 	const copyrightYear = () => {
 		const year = new Date().getFullYear();
 		if (year > 2021) {
