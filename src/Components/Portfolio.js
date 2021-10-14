@@ -9,6 +9,7 @@ const Portfolio = () => {
 	const fadeProperties = {
 		duration: 3000,
 		pauseOnHover: true,
+		indicators: true,
 		canSwipe: true,
 		prevArrow: (
 			<FontAwesomeIcon
@@ -27,12 +28,18 @@ const Portfolio = () => {
 	};
 
 	return (
-		<div className="p-6 max-w-7xl mx-auto">
-			<h3 className="text-center text-3xl mb-3">Stuff I Made</h3>
-			<div className="max-w-5xl mx-auto bg-gradient-to-br from-blue-500 to-purple-400 rounded-md overflow-hidden shadow-md slide-container">
+		<div id="portfolio">
+			<div className="text-center m-5">
+				<h3 className="text-3xl mb-3 text-gray-600">Stuff I Made</h3>
+				<p className="text-lg text-gray-600">
+					Here are just a few of the things I've built on my journey to make the
+					web a better place!
+				</p>
+			</div>
+			<div className="slide-container">
 				<Slide {...fadeProperties}>
 					{portfolio.map(data => (
-						<div className="md:flex">
+						<div className="md:flex bg-gradient-to-br from-blue-500 to-purple-400 ">
 							<div className="flex-1">
 								<img src={data.img} alt="" />
 							</div>

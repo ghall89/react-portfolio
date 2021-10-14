@@ -1,4 +1,4 @@
-import { About, Contact, Portfolio, Skills } from './Components/';
+import { About, Contact, Nav, Portfolio, Skills } from './Components/';
 
 import logo from './img/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -17,7 +17,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<header className="p-4">
+			<header className="p-4" id="home">
 				<img
 					className="sm:w-4/6 sm:max-w-3xl m-auto"
 					src={logo}
@@ -29,6 +29,7 @@ function App() {
 			</header>
 
 			<About />
+			<Skills />
 			<Portfolio />
 			<Contact />
 
@@ -40,6 +41,7 @@ function App() {
 					</span>
 				</p>
 			</footer>
+			<Nav />
 		</div>
 	);
 }
