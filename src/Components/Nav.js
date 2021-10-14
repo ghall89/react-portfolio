@@ -11,15 +11,18 @@ const Nav = () => {
 	const links = [
 		{
 			icon: <FontAwesomeIcon icon={faUser} />,
-			id: 'about'
+			id: 'about',
+			offset: -140
 		},
 		{
 			icon: <FontAwesomeIcon icon={faBriefcase} />,
-			id: 'portfolio'
+			id: 'portfolio',
+			offset: 0
 		},
 		{
 			icon: <FontAwesomeIcon icon={faEnvelope} />,
-			id: 'contact'
+			id: 'contact',
+			offset: 0
 		}
 	];
 
@@ -28,15 +31,18 @@ const Nav = () => {
 	};
 
 	return (
-		<div className="transition-transform duration-150 ease-in-out fixed left-0 top-1/3 bg-black bg-opacity-50 backdrop-filter backdrop-blur-md text-white text-lg shadow-lg rounded-r z-50 transform -translate-x-11 md:-translate-x-0">
-			<ul>
+		<div className="fixed flex items-center left-0 top-0 h-full bg-gray-100 text-2xl shadow-xl z-50 invisible md:visible">
+			<ul className="my-auto">
 				{links.map(link => (
-					<li className="m-3 mix-blend-luminosity" key={Math.random()}>
+					<li
+						className="p-3 text-blue-400 hover:text-white hover:bg-blue-600"
+						key={Math.random()}
+					>
 						<Link
 							to={link.id}
 							spy={true}
 							smooth={true}
-							offset={-70}
+							offset={link.offset}
 							duration={500}
 						>
 							{link.icon}

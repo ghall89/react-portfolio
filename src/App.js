@@ -16,8 +16,8 @@ function App() {
 	};
 
 	return (
-		<div className="App">
-			<header className="p-4" id="home">
+		<div className="App md:ml-8">
+			<header className="p-4">
 				<img
 					className="sm:w-4/6 sm:max-w-3xl m-auto"
 					src={logo}
@@ -27,11 +27,16 @@ function App() {
 					Front-End Web Developer
 				</h2>
 			</header>
-
-			<About />
-			<Skills />
-			<Portfolio />
-			<Contact />
+			<section id="about">
+				<About />
+				<Skills />
+			</section>
+			<section id="portfolio">
+				<Portfolio />
+			</section>
+			<section id="contact">
+				<Contact />
+			</section>
 
 			<footer className="text-center text-white p-8 bg-gradient-to-br from-blue-500 to-purple-400 ">
 				<p>

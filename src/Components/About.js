@@ -2,10 +2,7 @@ import { Social } from './index';
 
 const About = () => {
 	return (
-		<div
-			className="bg-gradient-to-br from-blue-500 to-purple-400 p-6 mt-28"
-			id="about"
-		>
+		<div className="bg-gradient-to-br from-blue-500 to-purple-400 p-6 mt-28">
 			<div className="w-full h-20">
 				<img
 					className="rounded-full w-52 mx-auto transform -translate-y-32"
