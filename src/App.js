@@ -29,7 +29,6 @@ function App() {
 			</header>
 
 			<About />
-			<Skills />
 			<Portfolio />
 			<Contact />
 
