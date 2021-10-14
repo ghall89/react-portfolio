@@ -36,7 +36,7 @@ const Skills = () => {
 	];
 
 	return (
-		<div className="sm:flex max-w-5xl	mx-auto">
+		<div className="sm:flex max-w-5xl	mx-auto my-12">
 			{skillList.map(skills => (
 				<div className="flex-grow p-3 m-4" key={skills.id}>
 					<div className="text-center text-4xl m-3">{skills.icon}</div>
