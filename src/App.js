@@ -31,7 +31,6 @@ function App() {
 			<About />
 			<Skills />
 			<Portfolio />
-
 			<Contact />
 
 			<footer className="text-center text-white p-8 bg-gradient-to-br from-blue-500 to-purple-400 ">

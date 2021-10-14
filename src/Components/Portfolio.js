@@ -1,3 +1,8 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+
+import { Slide } from 'react-slideshow-image';
+
 const Portfolio = () => {
 	const images = [
 		'https://res.cloudinary.com/dfkh0m4wf/image/upload/v1631303064/ghall.dev/mindfulness_zumonb.jpg',
@@ -9,15 +14,47 @@ const Portfolio = () => {
 		'https://res.cloudinary.com/dfkh0m4wf/image/upload/v1625859017/ghall.dev/work-day_ff0xvy.jpg'
 	];
 
+	const fadeProperties = {
+		duration: 3000,
+		pauseOnHover: true,
+		canSwipe: true,
+		prevArrow: (
+			<FontAwesomeIcon
+				className="text-white"
+				style={{ width: '30px', marginRight: '-30px' }}
+				icon={faAngleLeft}
+			/>
+		),
+		nextArrow: (
+			<FontAwesomeIcon
+				className="text-white"
+				style={{ width: '30px', marginLeft: '-30px' }}
+				icon={faAngleRight}
+			/>
+		)
+	};
+
 	return (
-		<div className="bg-gradient-to-br from-blue-500 to-purple-400  pt-6 sm:p-6">
-			<h3 className="text-center text-3xl text-white">Stuff I Made</h3>
-			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-4 mt-8">
-				{images.map(url => (
-					<div className="overflow-hidden max-h-52 sm:h-auto sm:rounded-md sm:border-8 border-white shadow-xl transition-transform transform sm:hover:scale-105 ">
-						<img src={url} alt="image" />
-					</div>
-				))}
+		<div className="p-6 max-w-7xl mx-auto">
+			<h3 className="text-center text-3xl mb-3">Stuff I Made</h3>
+			<div className="max-w-5xl mx-auto bg-gray-300 rounded-md overflow-hidden shadow-md slide-container">
+				<Slide {...fadeProperties}>
+					{images.map(url => (
+						<div className="flex">
+							<div className="flex-1">
+								<img src={url} alt="" />
+							</div>
+							<div className="flex-1 p-3">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Impedit quo sint id molestiae. Consectetur dolores laboriosam,
+									accusamus ipsam pariatur minima nihil beatae dolore reiciendis
+									doloremque, ipsum modi hic earum sunt!
+								</p>
+							</div>
+						</div>
+					))}
+				</Slide>
 			</div>
 		</div>
 	);
