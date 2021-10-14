@@ -5,39 +5,32 @@ import {
 	faEnvelope
 } from '@fortawesome/free-solid-svg-icons';
 
-import * as Scroll from 'react-scroll';
-import {
-	Link,
-	Button,
-	Element,
-	Events,
-	animateScroll as scroll,
-	scrollSpy,
-	scroller
-} from 'react-scroll';
-
 const Nav = () => {
 	const links = [
 		{
 			icon: <FontAwesomeIcon icon={faUser} />,
-			link: '#home'
+			id: '#home'
 		},
 		{
 			icon: <FontAwesomeIcon icon={faBriefcase} />,
-			link: '#portfolio'
+			id: '#portfolio'
 		},
 		{
 			icon: <FontAwesomeIcon icon={faEnvelope} />,
-			link: '#contact'
+			id: '#contact'
 		}
 	];
+
+	const scroll = id => {
+		console.log(id);
+	};
 
 	return (
 		<div className="fixed left-0 top-1/3 bg-black bg-opacity-50 backdrop-filter backdrop-blur-md text-white text-lg shadow-lg rounded-r z-50">
 			<ul>
 				{links.map(link => (
-					<li className="m-3 mix-blend-luminosity">
-						<Link to={link.link}>{link.icon}</Link>
+					<li className="m-3 mix-blend-luminosity" key={Math.random()}>
+						<a href={link.id}>{link.icon}</a>
 					</li>
 				))}
 			</ul>
