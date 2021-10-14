@@ -8,23 +8,10 @@ import portfolio from '../db/portfolio.json';
 const Portfolio = () => {
 	const fadeProperties = {
 		duration: 3000,
+		transitionDuration: 500,
 		pauseOnHover: true,
 		indicators: true,
-		canSwipe: true,
-		prevArrow: (
-			<FontAwesomeIcon
-				className="text-white"
-				style={{ width: '30px', marginRight: '-30px' }}
-				icon={faAngleLeft}
-			/>
-		),
-		nextArrow: (
-			<FontAwesomeIcon
-				className="text-white"
-				style={{ width: '30px', marginLeft: '-30px' }}
-				icon={faAngleRight}
-			/>
-		)
+		arrows: false
 	};
 
 	return (
@@ -39,7 +26,10 @@ const Portfolio = () => {
 			<div className="slide-container">
 				<Slide {...fadeProperties}>
 					{portfolio.map(data => (
-						<div className="md:flex bg-gradient-to-br from-blue-500 to-purple-400 ">
+						<div
+							className="md:flex bg-gradient-to-br from-blue-500 to-purple-400"
+							key={Math.random()}
+						>
 							<div className="flex-1">
 								<img src={data.img} alt="" />
 							</div>
