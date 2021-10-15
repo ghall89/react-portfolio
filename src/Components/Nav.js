@@ -26,10 +26,6 @@ const Nav = () => {
 		}
 	];
 
-	const scroll = id => {
-		console.log(id);
-	};
-
 	return (
 		<div className="fixed flex items-center left-0 top-0 h-full bg-gray-100 text-2xl shadow-xl z-50 invisible md:visible">
 			<ul className="my-auto">
