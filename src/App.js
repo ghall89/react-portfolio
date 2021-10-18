@@ -16,7 +16,7 @@ function App() {
 	};
 
 	return (
-		<div className="App md:ml-8">
+		<div className="App md:ml-12">
 			<header className="p-4">
 				<img
 					className="sm:w-4/6 sm:max-w-3xl m-auto"

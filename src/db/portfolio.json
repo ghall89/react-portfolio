@@ -17,7 +17,7 @@
 	},
 	{
 		"title": "Campus Connect",
-		"description": "The final team project for the boot camp I attended. OUr goal was to create a chat app that the students in our cohort could use to keep in touch. My role was helping to build the front end, using React and  MaterialUI.",
+		"description": "The final team project for the boot camp I attended. Our goal was to build a chat app that the students in our cohort could use to keep in touch. My role was helping to build the front end, using React and Material UI.",
 		"img": "https://res.cloudinary.com/dfkh0m4wf/image/upload/v1626030730/ghall.dev/campus-connect_voww53.jpg",
 		"url": "https://campus-connect21.herokuapp.com/",
 		"github": "https://github.com/ghall89/campus-connect",
@@ -25,7 +25,7 @@
 	},
 	{
 		"title": "Family Financial",
-		"description": "A website to simulate managing a stock portfolio for a family, or small group. Built as a boot camp group project, my primary responsibility was bulding the front end using Handlebars and vanilla JavaScript.",
+		"description": "A tool to simulate managing a stock portfolio for a family, or small group. A boot camp group project, my primary responsibility was bulding the front end using Handlebars and JavaScript.",
 		"img": "https://res.cloudinary.com/dfkh0m4wf/image/upload/v1625859017/ghall.dev/fam-fin_zk5ur7.jpg",
 		"url": "https://familyfinancials.herokuapp.com/",
 		"github": "https://github.com/ghall89/famfin",
@@ -33,7 +33,7 @@
 	},
 	{
 		"title": "Weather Dashboard",
-		"description": "A weather page created for the web development bootcamp I attended. The goal of the project was to demonstrate my knowledge of CSS frameworks, REST APIs, and utilizing local storage to save and retrieve user data.",
+		"description": "A weather page created as a solo project for the web development bootcamp I attended.",
 		"img": "https://res.cloudinary.com/dfkh0m4wf/image/upload/v1625859017/ghall.dev/weather_ngrfiw.jpg",
 		"url": "https://ghall89.github.io/weather-dashboard/",
 		"github": "https://github.com/ghall89/weather-dashboard",
