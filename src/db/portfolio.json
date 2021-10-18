@@ -17,15 +17,15 @@
 	},
 	{
 		"title": "Campus Connect",
-		"description": "The final team project for the boot camp I attended. Our goal was to build a chat app that the students in our cohort could use to keep in touch.",
+		"description": "The final team project for the boot camp I attended. Our goal was to build a chat app that the students in our cohort could use to keep in touch. My role was helping to build the front end, using React and Material UI.",
 		"img": "https://res.cloudinary.com/dfkh0m4wf/image/upload/v1626030730/ghall.dev/campus-connect_voww53.jpg",
 		"url": "https://campus-connect21.herokuapp.com/",
 		"github": "https://github.com/ghall89/campus-connect",
-		"tags": ["JavaScript", "React", "Node", "Heroku", "Material UI"]
+		"tags": ["JavaScript", "React", "Node", "Heroku"]
 	},
 	{
 		"title": "Family Financial",
-		"description": "A tool to simulate managing a stock portfolio for a family, or small group. Built for a boot camp group project.",
+		"description": "A tool to simulate managing a stock portfolio for a family, or small group. A boot camp group project, my primary responsibility was bulding the front end using Handlebars and JavaScript.",
 		"img": "https://res.cloudinary.com/dfkh0m4wf/image/upload/v1625859017/ghall.dev/fam-fin_zk5ur7.jpg",
 		"url": "https://familyfinancials.herokuapp.com/",
 		"github": "https://github.com/ghall89/famfin",
