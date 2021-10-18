@@ -21,6 +21,7 @@ A website to display some of my best work, tell the world a little bit about mys
 - [FontAwesome](https://fontawesome.com)
 - [React-Slideshow](https://react-slideshow.herokuapp.com)
 - [React-Scroll](https://github.com/fisshy/react-scroll)
+- [React-Keydown](https://github.com/glortho/react-keydown)
 
 ## License
 
