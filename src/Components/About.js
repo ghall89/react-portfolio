@@ -11,8 +11,8 @@ const About = () => {
 				/>
 			</div>
 			<div className="text-white text-lg text-center md:w-3/4 mx-auto">
-				<p className="m-4">
-					Hey there! I'm Graham, and I'm a front-end web developer from Rhode
+				<p className="m-10 text-2xl">
+					Hey there! I'm Graham, and I'm a Front-End Web Developer from Rhode
 					Island.
 				</p>
 				<p className="m-4">

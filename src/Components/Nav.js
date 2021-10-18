@@ -31,7 +31,7 @@ const Nav = () => {
 			<ul className="my-auto">
 				{links.map(link => (
 					<li
-						className="p-3 text-blue-400 hover:text-white hover:bg-blue-600"
+						className="p-3 text-blue-400 hover:text-blue-600"
 						key={Math.random()}
 					>
 						<Link

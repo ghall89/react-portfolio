@@ -8,8 +8,20 @@ const Skills = () => {
 			id: 'tools',
 			title: 'Tools',
 			icon: <FontAwesomeIcon icon={faTools} />,
-			list1: ['Figma', 'Sketch', 'Git/GitHub', 'Heroku', 'NPM', 'ZSH', 'iTerm'],
-			list2: ['MacOS', 'Linux', 'VSCode', 'BBEdit', 'Nova']
+			list1: [
+				'Figma',
+				'Sketch',
+				'Git/GitHub',
+				'Heroku',
+				'Netlify',
+				'NPM',
+				'ZSH',
+				'MacOS',
+				'Linux',
+				'VSCode',
+				'BBEdit',
+				'Nova'
+			]
 		},
 		{
 			id: 'tech',
@@ -22,9 +34,7 @@ const Skills = () => {
 				'jQuery',
 				'Express',
 				'React',
-				'Handlebars'
-			],
-			list2: [
+				'Handlebars',
 				'Node.js',
 				'MongoDB',
 				'Bootstrap',
@@ -43,21 +53,15 @@ const Skills = () => {
 
 					<h3 className="text-center text-xl">{skills.title}</h3>
 
-					<div className="flex m-2 mx-auto w-full sm:w-1/2">
-						<ul className="flex-grow text-right">
-							{skills.list1.map(listItem => (
-								<li key={Math.random()} className="m-2">
-									{listItem}
-								</li>
-							))}
-						</ul>
-						<ul className="flex-grow">
-							{skills.list2.map(listItem => (
-								<li key={Math.random()} className="m-2">
-									{listItem}
-								</li>
-							))}
-						</ul>
+					<div className="flex flex-wrap justify-center m-2 mx-auto w-full">
+						{skills.list1.map(listItem => (
+							<div
+								key={Math.random()}
+								className="m-2 p-1 border-gray-300 border-2 rounded-full text-center"
+							>
+								<span className="mx-1 max-w-max">{listItem}</span>
+							</div>
+						))}
 					</div>
 				</div>
 			))}
