@@ -24,7 +24,7 @@ const About = () => {
 				<p className="m-4">
 					I spent several years in the design world, but in 2020 I decided to
 					make the jump towards taking on web development professionally. In
-					January of 2021, I began attending a web development bootcamp with UC
+					January of 2021, I began attending a web development boot camp with UC
 					Berkeley, and graduated the following summer.
 				</p>
 				<p className="m-4">
