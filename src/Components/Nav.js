@@ -27,26 +27,42 @@ const Nav = () => {
 	];
 
 	return (
-		<div className="fixed flex items-center left-0 top-0 h-full bg-gray-100 text-2xl shadow-xl z-50 invisible md:visible">
-			<ul className="my-auto">
-				{links.map(link => (
-					<li
-						className="p-3 text-blue-400 hover:text-blue-600"
-						key={Math.random()}
-					>
+		<>
+			<div className="fixed flex flex-wrap items-center left-0 top-0 h-full w-12 bg-gray-100 text-2xl shadow-xl z-50 invisible md:visible">
+				<div className="flex flex-wrap space-y-1.5">
+					{links.map(link => (
 						<Link
+							className="p-3 min-w-full text-blue-400 hover:text-white hover:bg-blue-500"
+							key={Math.random()}
 							to={link.id}
 							spy={true}
 							smooth={true}
 							offset={link.offset}
 							duration={500}
 						>
-							{link.icon}
+							<span>{link.icon}</span>
 						</Link>
-					</li>
-				))}
-			</ul>
-		</div>
+					))}
+				</div>
+			</div>
+			<div className="fixed flex flex-wrap justify-center bottom-0 left-0 h-16 w-full bg-gray-100 text-4xl shadow-xl z-50 visible md:invisible">
+				<div className="flex space-x-1">
+					{links.map(link => (
+						<Link
+							className="p-3 text-blue-400 hover:text-blue-500"
+							key={Math.random()}
+							to={link.id}
+							spy={true}
+							smooth={true}
+							offset={link.offset}
+							duration={500}
+						>
+							<span>{link.icon}</span>
+						</Link>
+					))}
+				</div>
+			</div>
+		</>
 	);
 };
 
