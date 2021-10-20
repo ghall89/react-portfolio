@@ -45,22 +45,20 @@ const Nav = () => {
 					))}
 				</div>
 			</div>
-			<div className="fixed flex flex-wrap justify-center bottom-0 left-0 h-16 w-full bg-gray-100 text-4xl shadow-xl z-50 visible md:invisible">
-				<div className="flex space-x-1">
-					{links.map(link => (
-						<Link
-							className="p-3 text-blue-400 hover:text-blue-500"
-							key={Math.random()}
-							to={link.id}
-							spy={true}
-							smooth={true}
-							offset={link.offset}
-							duration={500}
-						>
-							<span>{link.icon}</span>
-						</Link>
-					))}
-				</div>
+			<div className="fixed flex flex-wrap justify-around bottom-0 left-0 h-16 w-full bg-gray-100 text-4xl shadow-xl z-50 visible md:invisible">
+				{links.map(link => (
+					<Link
+						className="p-3 text-blue-400 hover:text-blue-500"
+						key={Math.random()}
+						to={link.id}
+						spy={true}
+						smooth={true}
+						offset={link.offset}
+						duration={500}
+					>
+						<span>{link.icon}</span>
+					</Link>
+				))}
 			</div>
 		</>
 	);

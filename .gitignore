@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .nova/
+# Local Netlify folder
+.netlify
