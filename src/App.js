@@ -1,11 +1,4 @@
-import {
-	About,
-	Contact,
-	Nav,
-	Portfolio,
-	Skills,
-	Testimonials
-} from './Components/';
+import { About, Contact, Nav, Portfolio, Skills } from './Components/';
 
 import logo from './img/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -37,7 +30,6 @@ function App() {
 			<section id="about">
 				<About />
 				<Skills />
-				<Testimonials />
 			</section>
 			<section id="portfolio">
 				<Portfolio />

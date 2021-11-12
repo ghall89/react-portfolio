@@ -1,3 +1,5 @@
+import { Newsletter } from '.';
+
 const Contact = () => {
 	return (
 		<div className="py-40">
