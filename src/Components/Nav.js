@@ -28,41 +28,6 @@ const Nav = () => {
 		}
 	];
 
-	// detect keyboard input and scroll to section
-	useEffect(() => {
-		function handleKeyDown(e) {
-			// if '1' or 'a' is pressed, scroll to about section
-			if (e.keyCode === 49 || e.keyCode === 65) {
-				scroller.scrollTo('about', {
-					smooth: true,
-					offset: -140,
-					duration: 500
-				});
-				// if '2' or 'p' is pressed, scroll to portfolio section
-			} else if (e.keyCode === 50 || e.keyCode === 80) {
-				scroller.scrollTo('portfolio', {
-					smooth: true,
-					offset: 0,
-					duration: 500
-				});
-				// if '3' or 'c' is pressed, scroll to contact section
-			} else if (e.keyCode === 51 || e.keyCode === 67) {
-				scroller.scrollTo('contact', {
-					smooth: true,
-					offset: 0,
-					duration: 500
-				});
-			}
-		}
-
-		document.addEventListener('keydown', handleKeyDown);
-
-		// event clean up
-		return function cleanup() {
-			document.removeEventListener('keydown', handleKeyDown);
-		};
-	}, []);
-
 	return (
 		<>
 			{/* sidebar for desktop view */}
@@ -70,7 +35,7 @@ const Nav = () => {
 				<div className="flex flex-wrap space-y-1.5">
 					{links.map(link => (
 						<Link
-							className="p-3 min-w-full text-blue-400 hover:text-white hover:bg-blue-500"
+							className="p-3 min-w-full text-blue-400 transition-colors hover:text-white hover:bg-blue-500"
 							key={Math.random()}
 							to={link.id}
 							spy={true}
