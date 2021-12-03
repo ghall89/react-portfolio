@@ -28,12 +28,14 @@ const Portfolio = () => {
 							key={Math.random()}
 						>
 							<div className="flex-1">
-								<img src={data.img} alt="" />
+								<img src={data.img} alt={data.title} />
 							</div>
-							<div className="flex-1 text-white relative h-64 md:h-auto">
-								<h4 className="text-center text-xl m-4">{data.title}</h4>
-								<p className="m-4">{data.description}</p>
-								<p className="m-4">Tools: {data.tags.join(', ')}</p>
+							<div className="flex-1 flex text-white relative h-64 md:h-auto pb-16">
+								<div className="text-center self-center w-full ">
+									<h4 className="text-2xl font-bold	m-4">{data.title}</h4>
+									<p className="m-4">{data.description}</p>
+									<p className="m-4">Tools: {data.tags.join(', ')}</p>
+								</div>
 								<div className="absolute bottom-5 flex px-3 space-x-3 w-full text-center">
 									<a
 										href={data.url}

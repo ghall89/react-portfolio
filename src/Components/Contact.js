@@ -7,8 +7,7 @@ const Contact = () => {
 			<div className="max-w-2xl mx-auto mb-10 text-center text-lg">
 				<p className="m-3">Like what you see, or just want to get in touch?</p>
 				<p className="m-3">
-					Drop me a line at{' '}
-					<span className="text-white bg-gray-600">graham@ghall.dev</span>,
+					Drop me a line at <span className="underline">graham@ghall.dev</span>,
 					follow me on{' '}
 					<a
 						className="text-blue-400 hover:text-blue-600"
