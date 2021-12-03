@@ -17,15 +17,17 @@ function App() {
 
 	return (
 		<div className="App mb-16 md:ml-12 md:mb-0">
-			<header className="p-4">
-				<img
-					className="sm:w-4/6 sm:max-w-3xl m-auto"
-					src={logo}
-					alt="Graham Hall's logo"
-				/>
-				<h2 className="text-center text-2xl text-gray-600 py-7">
-					Front-End Web Developer
-				</h2>
+			<header className="h-screen p-4 flex">
+				<div className="w-full self-center">
+					<img
+						className="sm:w-4/6 sm:max-w-3xl m-auto"
+						src={logo}
+						alt="Graham Hall's logo"
+					/>
+					<h2 className="text-center text-2xl text-gray-600 py-7">
+						Front-End Web Developer
+					</h2>
+				</div>
 			</header>
 			<section id="about">
 				<About />
