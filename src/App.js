@@ -17,7 +17,7 @@ function App() {
 
 	return (
 		<div className="App mb-16 md:ml-12 md:mb-0">
-			<header className="h-screen p-4 flex">
+			<header className="h-screen p-4 flex header-img">
 				<div className="w-full self-center">
 					<img
 						className="sm:w-4/6 sm:max-w-3xl m-auto"
