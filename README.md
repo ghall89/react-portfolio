@@ -16,7 +16,7 @@ A website to display some of my best work, tell the world a little bit about mys
 
 ## Dependancies
 
-- [React](https://handlebarsjs.com)
+- [React](https://reactjs.org)
 - [Tailwind](https://tailwindcss.com)
 - [FontAwesome](https://fontawesome.com)
 - [React-Slideshow](https://react-slideshow.herokuapp.com)
