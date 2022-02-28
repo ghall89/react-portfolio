@@ -57,7 +57,7 @@ const Skills = () => {
 						{skills.list1.map(listItem => (
 							<div
 								key={Math.random()}
-								className="m-2 p-1 border-gray-300 border-2 rounded-full text-center"
+								className="m-2 p-1 shadow rounded-full text-center"
 							>
 								<span className="mx-1 max-w-max">{listItem}</span>
 							</div>

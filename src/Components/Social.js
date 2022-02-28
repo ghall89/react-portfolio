@@ -33,7 +33,7 @@ const Button = () => {
 					href={link.url}
 					target="_blank"
 					rel="noreferrer"
-					className="text-white border-2 border-white p-2 rounded-md flex-grow transition-colors hover:text-blue-500 hover:bg-white min-w-full md:min-w-0"
+					className="p-2 rounded-md flex-grow text-blue-500 bg-white shadow min-w-full md:min-w-0 transition-transform transform hover:-translate-y-0.5 hover:shadow-md"
 				>
 					{link.icon}
 					<span className="ml-3">{link.name}</span>

@@ -2,10 +2,10 @@ import { Social } from './index';
 
 const About = () => {
 	return (
-		<div className="bg-gradient-to-br from-blue-500 to-purple-400 p-6 mt-28">
+		<div className="bg-gradient-to-br from-blue-500 to-purple-400 p-6 mt-28 shadow-inner">
 			<div className="w-full h-20">
 				<img
-					className="rounded-full w-52 mx-auto transform -translate-y-32"
+					className="rounded-full w-52 mx-auto transform -translate-y-32 shadow"
 					src="https://res.cloudinary.com/dfkh0m4wf/image/upload/v1629823161/ghall.dev/portrait_y8yaqq.jpg"
 					alt="Graham"
 				/>

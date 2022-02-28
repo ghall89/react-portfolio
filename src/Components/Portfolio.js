@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 const Portfolio = () => {
 	const fadeProperties = {
-		duration: 3000,
+		duration: 5000,
 		transitionDuration: 500,
 		pauseOnHover: true,
 		indicators: true,
@@ -25,8 +25,8 @@ const Portfolio = () => {
 	if (!portfolio) {
 		return (
 			<div className="flex justify-center items-center">
-				<div className="bg-gradient-to-br from-blue-500 to-purple-400 w-52 h-14 rounded-full">
-					<div className="animate-pulse text-white text-center text-2xl mt-2.5">
+				<div className="w-52 h-14">
+					<div className="animate-bounce text-blue-400 text-center text-2xl mt-2.5">
 						Loading...
 					</div>
 				</div>
@@ -38,7 +38,7 @@ const Portfolio = () => {
 				<Slide {...fadeProperties}>
 					{portfolio.map(data => (
 						<div
-							className="md:flex bg-gradient-to-br from-blue-500 to-purple-400"
+							className="md:flex bg-gradient-to-br from-blue-500 to-purple-400 shadow-inner"
 							key={Math.random()}
 						>
 							<div className="flex-1">
@@ -55,7 +55,7 @@ const Portfolio = () => {
 										href={data.url}
 										target="_blank"
 										rel="noreferrer"
-										className="text-white border-2 border-white p-2 rounded-md flex-1 transition-colors hover:text-blue-500 hover:bg-white"
+										className="p-2 rounded-md flex-grow text-blue-500 bg-white shadow flex-1 transition-transform transform hover:-translate-y-0.5 hover:shadow-md"
 									>
 										<span className="ml-3">Visit Page</span>
 									</a>
@@ -63,7 +63,7 @@ const Portfolio = () => {
 										href={data.github}
 										target="_blank"
 										rel="noreferrer"
-										className="text-white border-2 border-white p-2 rounded-md flex-1 transition-colors hover:text-blue-500 hover:bg-white"
+										className="p-2 rounded-md flex-grow text-blue-500 bg-white shadow flex-1 transition-transform transform hover:-translate-y-0.5 hover:shadow-md"
 									>
 										<span className="ml-3">GitHub</span>
 									</a>
