@@ -1,20 +1,12 @@
 import { About, Contact, Nav, Portfolio, Skills } from './Components/';
 
+import copyrightYear from './helpers/copyrightYear';
+
 import logo from './img/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
-	// display copyright year based on current year
-	const copyrightYear = () => {
-		const year = new Date().getFullYear();
-		if (year > 2021) {
-			return <span>2021 - {year}</span>;
-		} else {
-			return <span>{year}</span>;
-		}
-	};
-
 	return (
 		<div className="App mb-16 md:ml-12 md:mb-0">
 			<header className="h-screen p-4 flex header-img">
