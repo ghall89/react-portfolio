@@ -1,0 +1,65 @@
+[
+	{
+		"description": "A simple game in which you try to guess as many words as you can in a row based on a crossword-style clue.",
+		"github": "https://github.com/ghall89/word-game",
+		"id": "33ce5010-4edb-4fd2-b6a5-a70239a7792a",
+		"img": "https://res.cloudinary.com/dfkh0m4wf/image/upload/v1644790265/ghall.dev/wordgame_fbpgaa.jpg",
+		"tags": ["HTML", "JavaScript", "DOM"],
+		"title": "Word Game",
+		"url": "https://word-ga.me"
+	},
+	{
+		"description": "A weather page created as a solo project for the web development boot camp I attended.",
+		"github": "https://github.com/ghall89/weather-dashboard",
+		"id": "ba73a17a-cac3-4090-a5a4-15d985c7093c",
+		"img": "https://res.cloudinary.com/dfkh0m4wf/image/upload/v1625859017/ghall.dev/weather_ngrfiw.jpg",
+		"tags": ["Bootstrap", "Rest APIs", "Moment.js", "FontAwesome"],
+		"title": "Weather Dashboard",
+		"url": "https://ghall89.github.io/weather-dashboard/"
+	},
+	{
+		"description": "For this boot camp project, my team and I created this tool to simulate managing a stock portfolio for a family, or small group.",
+		"github": "https://github.com/ghall89/famfin",
+		"id": "ea45efbf-4265-4ce9-ab27-3ebe6d107f83",
+		"img": "https://res.cloudinary.com/dfkh0m4wf/image/upload/v1625859017/ghall.dev/fam-fin_zk5ur7.jpg",
+		"tags": ["JavaScript", "Handlebars", "Node", "Rest APIs"],
+		"title": "Family Financial",
+		"url": "https://familyfinancials.herokuapp.com/"
+	},
+	{
+		"description": "The final team project for the boot camp I attended. Our goal was to build a chat app that the students in our cohort could use to keep in touch.",
+		"github": "https://github.com/ghall89/campus-connect",
+		"id": "245d2534-c751-4b53-a5c8-6d41e357e94c",
+		"img": "https://res.cloudinary.com/dfkh0m4wf/image/upload/v1626030730/ghall.dev/campus-connect_voww53.jpg",
+		"tags": ["JavaScript", "React", "Node", "Heroku"],
+		"title": "Campus Connect",
+		"url": "https://campus-connect21.herokuapp.com/"
+	},
+	{
+		"description": "A simple desktop app, based on the calculator desk accessory from classic Mac OS.",
+		"github": "https://github.com/ghall89/classic-calc",
+		"id": "a24ea69b-40e1-4347-9292-e715d546e620",
+		"img": "https://res.cloudinary.com/dfkh0m4wf/image/upload/v1627086846/ghall.dev/classiccalc_udqnxl.jpg",
+		"tags": ["JavaScript", "CSS", "Electron"],
+		"title": "Classic Calculator",
+		"url": "https://ghall89.github.io/classic-calc/"
+	},
+	{
+		"description": "A web app to provide the user with a random journaling prompt.",
+		"github": "https://github.com/ghall89/mindfulness-prompts",
+		"id": "d34e580c-7b79-455c-b7bb-e5d38b9d16b5",
+		"img": "https://res.cloudinary.com/dfkh0m4wf/image/upload/v1629916280/ghall.dev/mindfulness_zumonb.jpg",
+		"tags": ["JavaScript", "React", "Sass", "Netlify", "JSON"],
+		"title": "Mindfulness Prompts",
+		"url": "http://journal-prompt.com"
+	},
+	{
+		"description": "My least favorite thing to do in CSS is to create drop shadows, so I wrote this small web app to generate the code for me.",
+		"github": "https://github.com/ghall89/css-shadow-tool",
+		"id": "27b22cfa-15e3-411a-b8b8-d8800ef39eda",
+		"img": "https://res.cloudinary.com/dfkh0m4wf/image/upload/v1642347778/ghall.dev/cssshadow_o23zm6.jpg",
+		"tags": ["JavaScript", "DOM"],
+		"title": "CSS Shadow Tool",
+		"url": "https://ghall89.github.io/css-shadow-tool/"
+	}
+]
