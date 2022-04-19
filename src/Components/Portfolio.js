@@ -1,5 +1,5 @@
 import { Slide } from 'react-slideshow-image';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import portfolioData from '../data/portfolio.json';
 
