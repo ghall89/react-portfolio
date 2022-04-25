@@ -8,16 +8,7 @@ const Contact = () => {
 				<p className="m-3">Like what you see, or just want to get in touch?</p>
 				<p className="m-3">
 					Drop me a line at <span className="underline">graham@ghall.dev</span>,
-					follow me on{' '}
-					<a
-						className="text-blue-400 hover:text-blue-600"
-						href="https://twitter.com/ohHeyItsGraham"
-						target="_blank"
-						rel="noreferrer"
-					>
-						Twitter
-					</a>
-					, or connect with me on{' '}
+					or connect with me on{' '}
 					<a
 						className="text-blue-400 hover:text-blue-600"
 						href="https://www.linkedin.com/in/ghalldev/"
