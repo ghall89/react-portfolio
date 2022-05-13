@@ -19,7 +19,7 @@ A website to display some of my best work, tell the world a little bit about mys
 - [React](https://reactjs.org)
 - [Tailwind](https://tailwindcss.com)
 - [FontAwesome](https://fontawesome.com)
-- [React-Slideshow](https://react-slideshow.herokuapp.com)
+- [Swiper.js](https://swiperjs.com/)
 - [React-Scroll](https://github.com/fisshy/react-scroll)
 
 ## License

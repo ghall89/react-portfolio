@@ -1,23 +1,24 @@
-import { Slide } from 'react-slideshow-image';
 import { useState } from 'react';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper';
+import 'swiper/swiper-bundle.min.css';
+// import 'swiper/components/pagination/pagination.min.css';
 
 import portfolioData from '../data/portfolio.json';
 
 const Portfolio = () => {
-	const fadeProperties = {
-		duration: 5000,
-		transitionDuration: 500,
-		pauseOnHover: true,
-		indicators: true,
-		arrows: false
-	};
-
 	const [portfolio, setPortfolio] = useState(portfolioData);
 
 	return (
-		<div className="slide-container">
-			<Slide {...fadeProperties}>
-				{portfolio.map(data => (
+		<Swiper
+			slidesPerView={1}
+			loop={true}
+			pagination={true}
+			modules={[Pagination]}
+		>
+			{portfolio.map(data => (
+				<SwiperSlide>
 					<div
 						className="md:flex bg-gradient-to-br from-blue-500 to-purple-400 shadow-inner"
 						key={Math.random()}
@@ -51,9 +52,9 @@ const Portfolio = () => {
 							</div>
 						</div>
 					</div>
-				))}
-			</Slide>
-		</div>
+				</SwiperSlide>
+			))}
+		</Swiper>
 	);
 };
 
